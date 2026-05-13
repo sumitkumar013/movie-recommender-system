@@ -8513,7 +8513,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\deepb\AppData\Local\Temp\ipykernel_34996\1177805527.py:1: SettingWithCopyWarning: 
+<pre>C:\Users\deepb\AppData\Local\Temp\ipykernel_28888\1177805527.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -8571,7 +8571,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\deepb\AppData\Local\Temp\ipykernel_34996\3249582252.py:1: SettingWithCopyWarning: 
+<pre>C:\Users\deepb\AppData\Local\Temp\ipykernel_28888\3249582252.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -8711,7 +8711,7 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\deepb\AppData\Local\Temp\ipykernel_34996\3133316402.py:1: SettingWithCopyWarning: 
+<pre>C:\Users\deepb\AppData\Local\Temp\ipykernel_28888\3133316402.py:1: SettingWithCopyWarning: 
 A value is trying to be set on a copy of a slice from a DataFrame.
 Try using .loc[row_indexer,col_indexer] = value instead
 
@@ -8736,46 +8736,44 @@ See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stab
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=df9a9b56-a19e-4eb5-ae89-7c8887bd66fe">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=257d7dec-1a74-40f6-9070-d086361e6ce4">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [41]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [51]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">similarity</span> <span class="o">=</span><span class="n">cosine_similarity</span><span class="p">(</span><span class="n">vectors</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">similarity</span> <span class="o">=</span> <span class="n">cosine_similarity</span><span class="p">(</span><span class="n">vectors</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=7b7f41af-c76a-47c0-8ea3-fe93321b26df">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=d387f247-2553-4865-b985-2cb17796237d">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [42]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [61]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">similarity</span><span class="o">=</span> <span class="n">similarity</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">'float16'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=7b7f41af-c76a-47c0-8ea3-fe93321b26df">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [55]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="nb">sorted</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="nb">enumerate</span><span class="p">(</span><span class="n">similarity</span><span class="p">[</span><span class="mi">0</span><span class="p">])),</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span> <span class="p">,</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">])[</span><span class="mi">1</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[42]:</div>
-<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
-<pre>[(539, np.float64(0.26089696604360174)),
- (1192, np.float64(0.2581988897471611)),
- (507, np.float64(0.25302403842552984)),
- (260, np.float64(0.25110592822973776)),
- (1214, np.float64(0.24944382578492943))]</pre>
 </div>
 </div>
 </div>
@@ -8878,130 +8876,11 @@ Batman
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [48]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [62]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">pickle</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">similarity</span><span class="p">,</span><span class="nb">open</span><span class="p">(</span><span class="s1">'similarity.pkl'</span><span class="p">,</span><span class="s1">'wb'</span><span class="p">))</span>
 </pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=aed68f5f-6f2f-4bec-9130-e89491f0294b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [49]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">new_df</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[49]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>movie_id</th>
-<th>title</th>
-<th>tags</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>19995</td>
-<td>Avatar</td>
-<td>in the 22nd century, a parapleg marin is dispa...</td>
-</tr>
-<tr>
-<th>1</th>
-<td>285</td>
-<td>Pirates of the Caribbean: At World's End</td>
-<td>captain barbossa, long believ to be dead, ha c...</td>
-</tr>
-<tr>
-<th>2</th>
-<td>206647</td>
-<td>Spectre</td>
-<td>a cryptic messag from bond’ past send him on a...</td>
-</tr>
-<tr>
-<th>3</th>
-<td>49026</td>
-<td>The Dark Knight Rises</td>
-<td>follow the death of district attorney harvey d...</td>
-</tr>
-<tr>
-<th>4</th>
-<td>49529</td>
-<td>John Carter</td>
-<td>john carter is a war-weary, former militari ca...</td>
-</tr>
-<tr>
-<th>...</th>
-<td>...</td>
-<td>...</td>
-<td>...</td>
-</tr>
-<tr>
-<th>4804</th>
-<td>9367</td>
-<td>El Mariachi</td>
-<td>el mariachi just want to play hi guitar and ca...</td>
-</tr>
-<tr>
-<th>4805</th>
-<td>72766</td>
-<td>Newlyweds</td>
-<td>a newlyw couple' honeymoon is upend by the arr...</td>
-</tr>
-<tr>
-<th>4806</th>
-<td>231617</td>
-<td>Signed, Sealed, Delivered</td>
-<td>"signed, sealed, delivered" introduc a dedic q...</td>
-</tr>
-<tr>
-<th>4807</th>
-<td>126186</td>
-<td>Shanghai Calling</td>
-<td>when ambiti new york attorney sam is sent to s...</td>
-</tr>
-<tr>
-<th>4808</th>
-<td>25975</td>
-<td>My Date with Drew</td>
-<td>ever sinc the second grade when he first saw h...</td>
-</tr>
-</tbody>
-</table>
-<p>4806 rows × 3 columns</p>
-</div>
 </div>
 </div>
 </div>
